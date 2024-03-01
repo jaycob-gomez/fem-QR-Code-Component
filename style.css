@@ -1,0 +1,77 @@
+/* Custom Properties */
+:root {
+    --white:  hsl(0, 0%, 100%);
+    --light-gray: hsl(212, 45%, 89%);
+    --grayish-blue: hsl(220, 15%, 55%);
+    --qr-bg: hsl(228, 45%, 44%);
+    --dark-blue: hsl(218, 44%, 22%);
+
+    --ff-primary: "Outfit", sans-serif;
+    --font-size: 15px;
+    --fw-400: 400;
+    --fw-700: 700;
+
+}
+
+/* Styling */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: inline-block;
+    max-width: 100%; /* Image shrinks or grows depending on the body width */
+}
+
+body {
+    background-color: var(--light-gray);
+    font-family: var(--ff-primary);
+    color: var(--grayish-blue);
+}
+
+h1 {
+    font-size: 1.35em;
+    color: var(--dark-blue);
+    font-weight: var(--fw-700);
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-bottom: 1em;
+}
+
+p {
+    font-size: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-bottom: 2em;
+    margin-top: 0;
+    font-weight: var(--fw-400);
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    height: 100dvh;/* Now that you set the height of the container, you can now center the card that is contained inside the container */
+}
+
+.card {
+    /* Using em - the only unit that performs consistently on all browsers therefore mitigating the use of a media query in this project */
+    width: 20em;
+    margin-inline: auto;
+    background: var(--white);
+    padding: 1em;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 0.5em 2em -1em var(--grayish-blue);
+}
+
+.qr-code-image {
+    border-radius: 15px;
+    margin-bottom: 1em;
+}
+
+
+
